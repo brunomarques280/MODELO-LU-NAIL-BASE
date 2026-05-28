@@ -386,8 +386,13 @@ const applySiteData = (data) => {
   setText('location-whatsapp-display', data.contact?.whatsappDisplay);
   setText('maps-link', data.location?.mapsCtaText);
   setText('location-whatsapp-cta', data.location?.whatsappCtaText);
+  setText('location-card-title', data.location?.title || defaultLocationTitle);
+  setText('location-card-address', data.contact?.address);
+  setText('location-card-note', data.location?.cardNote || data.contact?.whatsappDisplay);
+  setText('location-card-maps-link', data.location?.mapsCtaText);
 
   setAttr('maps-link', 'href', data.contact?.googleMapsLink);
+  setAttr('location-card-maps-link', 'href', data.contact?.googleMapsLink);
   setAttr('location-iframe', 'src', data.contact?.mapEmbedLink);
   setAttr('location-iframe', 'title', data.contact?.mapTitle);
 

@@ -770,12 +770,45 @@ p {
   color: var(--text-soft);
 }
 
-.location iframe {
-  width: 100%;
+.location-map-card {
   min-height: 320px;
-  border: 0;
   border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 90% 12%, rgba(196, 78, 123, 0.14), transparent 38%),
+    linear-gradient(150deg, #fffefe 0%, #fff1f5 100%);
   box-shadow: var(--shadow);
+  padding: 1.3rem;
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+}
+
+.location-map-kicker {
+  margin: 0;
+  color: var(--primary-dark);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.location-map-card h3 {
+  font-size: 1.22rem;
+}
+
+.location-map-address,
+.location-map-note {
+  color: var(--text-soft);
+}
+
+.location-map-note {
+  font-weight: 600;
+}
+
+.location-map-action {
+  margin-top: 0.25rem;
+  width: fit-content;
 }
 
 .final-cta-box {
@@ -1150,6 +1183,14 @@ p {
   .booking-modal-panel {
     border-radius: 18px;
     padding: 1rem;
+  }
+
+  .gallery-grid .gallery-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .location-map-action {
+    width: 100%;
   }
 
   .whatsapp-float {

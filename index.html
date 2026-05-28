@@ -173,13 +173,21 @@
             <a class="btn btn-ghost js-whatsapp-link" data-whatsapp-message="locationCta" href="#" target="_blank" rel="noopener noreferrer" id="location-whatsapp-cta">Falar agora</a>
           </div>
         </div>
-        <iframe
-          id="location-iframe"
-          title="Mapa do atendimento"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src=""
-        ></iframe>
+        <article class="location-map-card" aria-label="Resumo da localização">
+          <p class="location-map-kicker">Atendimento local</p>
+          <h3 id="location-card-title">Atendimento em Coqueiros, Florianópolis</h3>
+          <p class="location-map-address" id="location-card-address">R. da Fonte, 449 - Coqueiros, Florianópolis - SC</p>
+          <p class="location-map-note" id="location-card-note">Confirmação rápida pelo WhatsApp</p>
+          <a
+            class="btn btn-primary location-map-action"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="location-card-maps-link"
+          >
+            Como chegar
+          </a>
+        </article>
       </div>
     </section>
 

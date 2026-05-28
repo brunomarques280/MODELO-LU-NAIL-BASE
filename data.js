@@ -34,7 +34,7 @@
 
   contact: {
     whatsapp: '555186584252',
-    whatsappDisplay: '(51) 8658-4252',
+    whatsappDisplay: 'Confirmação rápida pelo WhatsApp',
     whatsappDefaultMessage: 'Oi, vim pelo site e quero agendar um horário.',
     instagram: 'https://www.instagram.com/delunaildesigner18',
     address: 'R. da Fonte, 449 - Coqueiros, Florianópolis - SC',

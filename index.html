@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelo Nail Designer | Atendimento Premium</title>
+  <meta name="description" content="Atendimento premium de nail designer com foco em beleza, cuidado e praticidade." />
+  <meta name="theme-color" content="#f6e7ea" id="theme-color-meta" />
+  <meta property="og:title" content="Modelo Nail Designer" id="og-title-meta" />
+  <meta property="og:description" content="Site profissional para nail designer com foco em conversão." id="og-description-meta" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" id="brand-link" aria-label="Página inicial">
+        <span class="brand-mark" aria-hidden="true" id="brand-mark">ND</span>
+        <span class="brand-text">
+          <strong id="brand-name">Nail Designer</strong>
+          <small id="brand-subtitle">Beauty Studio</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primary-menu" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#localizacao">Localização</a>
+        <a class="btn btn-nav js-whatsapp-link" data-whatsapp-message="nav" href="#" target="_blank" rel="noopener noreferrer" id="nav-whatsapp-cta">Agendar agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section-reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" id="hero-kicker">Atendimento local</p>
+          <p class="hero-premium-badge" id="hero-premium-badge">Agenda online + WhatsApp integrado</p>
+          <h1 id="hero-title">Unhas impecáveis para valorizar sua beleza.</h1>
+          <p class="hero-sub" id="hero-text">
+            Atendimento profissional com acabamento premium e experiência acolhedora.
+          </p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary btn-glow js-open-scheduler" type="button" id="hero-whatsapp-cta">Agendar agora</button>
+            <a class="btn btn-ghost" href="#galeria" id="hero-secondary-cta">Ver resultados</a>
+          </div>
+          <p class="hero-whatsapp-inline" id="hero-whatsapp-inline">Confirmação rápida e suporte direto no WhatsApp</p>
+          <div class="hero-social-proof">
+            <span class="stars" id="hero-rating" aria-label="Nota">4,9 ★★★★★</span>
+            <span id="hero-reviews">+50 avaliações</span>
+            <span id="hero-proof-note">Atendimento feminino e acolhedor</span>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="media-card media-main">
+            <img id="hero-main-image" src="" alt="Imagem principal do atendimento" loading="eager" />
+          </div>
+          <div class="media-card media-secondary">
+            <img id="hero-secondary-image" src="" alt="Imagem secundária do atendimento" loading="lazy" />
+          </div>
+          <div class="booking-preview" id="hero-booking-preview">
+            <p class="booking-preview-kicker" id="hero-booking-kicker">Agendamento online</p>
+            <h3 id="hero-booking-title">Próximo horário livre</h3>
+            <p class="booking-preview-slot" id="hero-booking-slot">Hoje, 15:30</p>
+            <small id="hero-booking-note">Confirmação imediata no WhatsApp</small>
+          </div>
+          <div class="media-stamp" id="hero-media-stamp">Atendimento com hora marcada</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof section-reveal" aria-label="Prova social">
+      <div class="container proof-grid" id="proof-grid"></div>
+    </section>
+
+    <section class="about section-reveal" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <p class="kicker" id="about-kicker">Sobre o Studio</p>
+          <h2 id="about-title">Cuidado e técnica em cada detalhe.</h2>
+          <p id="about-text-1">Texto de apresentação do studio.</p>
+          <p id="about-text-2">Texto complementar sobre experiência e atendimento.</p>
+        </div>
+        <aside class="about-card">
+          <h3 id="about-card-title">Atendimento organizado</h3>
+          <ul id="about-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="services section-reveal" id="servicos">
+      <div class="container">
+        <p class="kicker" id="services-kicker">Serviços</p>
+        <h2 id="services-title">Serviços para valorizar sua beleza.</h2>
+        <div class="services-grid" id="services-grid"></div>
+        <div class="section-cta">
+          <a class="btn btn-primary js-whatsapp-link" data-whatsapp-message="servicesCta" href="#" target="_blank" rel="noopener noreferrer" id="services-whatsapp-cta">Pedir valores pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works section-reveal" id="como-funciona">
+      <div class="container">
+        <p class="kicker" id="steps-kicker">Como funciona</p>
+        <h2 id="steps-title">Agende em poucos cliques e sem complicação</h2>
+        <p class="steps-subtitle" id="steps-subtitle">Escolha o serviço, selecione o horário e confirme tudo no WhatsApp.</p>
+        <div class="steps-grid" id="steps-grid"></div>
+      </div>
+    </section>
+
+    <section class="differentials section-reveal" id="diferenciais">
+      <div class="container">
+        <p class="kicker" id="differentials-kicker">Diferenciais</p>
+        <h2 id="differentials-title">Por que escolher nosso atendimento</h2>
+        <div class="diff-grid" id="differentials-grid"></div>
+      </div>
+    </section>
+
+    <section class="conversion section-reveal" id="conversao">
+      <div class="container conversion-box">
+        <h2 id="conversion-title">Seu atendimento mais organizado, bonito e fácil de agendar.</h2>
+        <p id="conversion-text">Tudo pensado para facilitar sua rotina e oferecer uma experiência premium do primeiro clique ao atendimento.</p>
+        <div class="conversion-cards" id="conversion-cards"></div>
+      </div>
+    </section>
+
+    <section class="gallery section-reveal" id="galeria">
+      <div class="container">
+        <p class="kicker" id="gallery-kicker">Galeria</p>
+        <h2 id="gallery-title">Resultados reais do atendimento</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <div class="section-cta">
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener noreferrer" id="instagram-cta">Ver mais no Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section-reveal" id="depoimentos">
+      <div class="container">
+        <p class="kicker" id="testimonials-kicker">Depoimentos</p>
+        <h2 id="testimonials-title">Clientes que recomendam</h2>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <section class="location section-reveal" id="localizacao">
+      <div class="container location-grid">
+        <div>
+          <p class="kicker" id="location-kicker">Localização</p>
+          <h2 id="location-title">Atendimento perto de você</h2>
+          <ul class="location-list">
+            <li><strong>Endereço:</strong> <span id="location-address">A definir</span></li>
+            <li><strong>Horário:</strong> <span id="location-hours">A definir</span></li>
+            <li><strong>WhatsApp:</strong> <span id="location-whatsapp-display">A definir</span></li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer" id="maps-link">Como chegar</a>
+            <a class="btn btn-ghost js-whatsapp-link" data-whatsapp-message="locationCta" href="#" target="_blank" rel="noopener noreferrer" id="location-whatsapp-cta">Falar agora</a>
+          </div>
+        </div>
+        <iframe
+          id="location-iframe"
+          title="Mapa do atendimento"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src=""
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="final-cta section-reveal">
+      <div class="container final-cta-box">
+        <p class="kicker" id="final-kicker">Últimas vagas</p>
+        <h2 id="final-title">Agende seu horário pelo WhatsApp.</h2>
+        <p id="final-text">Receba atendimento rápido e escolha o melhor horário para você.</p>
+        <div class="final-cta-actions">
+          <button class="btn btn-primary btn-glow js-open-scheduler" type="button" id="final-schedule-cta">Agendar agora</button>
+          <a class="btn btn-ghost js-whatsapp-link" data-whatsapp-message="finalCta" href="#" target="_blank" rel="noopener noreferrer" id="final-whatsapp-cta">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="booking-modal" id="booking-modal" hidden aria-hidden="true">
+    <div class="booking-modal-backdrop" data-close-booking="true"></div>
+    <div class="booking-modal-panel" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+      <button class="booking-close" id="booking-close" type="button" aria-label="Fechar agendamento">×</button>
+      <p class="kicker" id="booking-kicker">Agendamento online</p>
+      <h2 id="booking-title">Escolha seu melhor horário</h2>
+      <p class="booking-text" id="booking-text">Preencha os campos e confirme seu horário pelo WhatsApp.</p>
+      <form class="booking-form" id="booking-form">
+        <label for="booking-service">
+          Serviço
+          <select id="booking-service" required></select>
+        </label>
+        <div class="booking-form-grid">
+          <label for="booking-day">
+            Dia
+            <input type="date" id="booking-day" required />
+          </label>
+          <label for="booking-time">
+            Horário
+            <select id="booking-time" required></select>
+          </label>
+        </div>
+        <label for="booking-name">
+          Seu nome
+          <input type="text" id="booking-name" placeholder="Digite seu nome" required />
+        </label>
+        <div class="booking-summary" id="booking-summary" aria-live="polite"></div>
+        <button class="btn btn-primary btn-glow" id="booking-submit" type="submit">Confirmar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="current-year"></span> <span id="footer-brand">Nail Designer</span>. Todos os direitos reservados.</p>
+      <a href="#" target="_blank" rel="noopener noreferrer" id="footer-instagram-link">Instagram</a>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float js-whatsapp-link"
+    data-whatsapp-message="float"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Agendar pelo WhatsApp"
+    id="whatsapp-float"
+  >
+    <span aria-hidden="true">✆</span>
+    <small id="whatsapp-float-label">Agendar</small>
+  </a>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
